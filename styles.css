@@ -1,9 +1,17 @@
+:root {
+    --sidebar-colour: #60a5fa;
+    --nav-colour: #e0f2fe;
+    --border-colour: #172554;
+    --content-colour: #e2e8f0;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--content-colour);
 }
 a {
     all: unset;
@@ -20,12 +28,14 @@ a {
 }
 
 .sidebar {
-    border: 1px solid red;
     grid-row: 1 / -1;
 
     display: grid;
     grid-template-rows: 50px min-content min-content;
     gap: 20px;
+
+    background-color: var(--sidebar-colour);
+    color: white;
 }
 .sidebar .logo {
     margin-left: 10px;
@@ -46,11 +56,12 @@ a {
 }
 
 .navbar {
-    border: 1px solid green;
-
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    background-color: white;
+    box-shadow: 4px 2px 6px grey;
 }
 .navbar .search {
     display: grid;
@@ -61,7 +72,19 @@ a {
 .navbar .search input[type='text'] {
     width: 90%;
     place-self: center;
+    border: none;
+    border-radius: 10px;
+    height: 26px;
+    box-shadow: 2px 2px 3px lightgray;
+    padding: 4px;
+
+    background-color: var(--content-colour);
 }
+.navbar .search input:focus-visible {
+    outline: none;
+    box-shadow: 2px 2px 3px gray;
+}
+
 .navbar .search label {
     display: none;
 }
@@ -123,19 +146,23 @@ a {
     grid-column: 1 / -1;
 }
 .content .main-content .card {
-    border-left: 8px solid black;
+    border-left: 8px solid var(--border-colour);
     border-radius: 5px;
     padding: 20px;
     box-shadow: 4px 2px 6px black;
+
+    background-color: white;
 }
 .content .trending-container,
 .content .announcement-container {
-    border: 1px solid black;
     margin-right: 30px;
     padding-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
     height:90%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 4px 2px 6px black;
 
     display: grid;
     grid-auto-rows: 75px;
