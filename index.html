@@ -3,15 +3,99 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Admin Dashboard</title>
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
     </head>
     <body>
         <div class="container">
-            <div class="sidebar"></div>
-            <div class="navbar"></div>
-            <div class="content"></div>
+            <div class="sidebar">
+                <a href="#" class="logo">
+                    <h2>Dashboard</h2>
+                </a>
+                <ul class="categories">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Tasks</a></li>
+                    <li><a href="#">Communities</a></li>
+                </ul>
+                <ul class="alt-categories">
+                    <li>Settings</li>
+                    <li>Support</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+
+            <div class="navbar">
+                <div class="search">
+                    <label for="searchbar">Search bar</label>
+                    <input type="text" name="search-content" id="search-bar" />
+                </div>
+                <div class="user-info">
+                    <!-- Notifications Icon -->
+                    <img src="#" alt="Profile Picture" />
+                    <p>Alice Bobsson</p>
+                </div>
+                <div class="greetings">
+                    <img src="#" alt="Profile Picture" />
+                    <p>
+                        Hi there, <br />
+                        Alice Bobsson (@Tree-ro)
+                    </p>
+                </div>
+                <div class="actions">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="main-content">
+                    <h2>Your Projects</h2>
+                    <!-- Box with different projects -->
+                    <div class="card">
+                        <h3>card1</h3>
+                        <p></p>
+                        <div class="card-icons"></div>
+                    </div>
+                    <div class="card">
+                        <h3>card2</h3>
+                        <p></p>
+                        <div class="card-icons"></div>
+                    </div>
+                    <div class="card">
+                        <h3>card3</h3>
+                        <p></p>
+                        <div class="card-icons"></div>
+                    </div>
+                    <div class="card">
+                        <h3>card4</h3>
+                        <p></p>
+                        <div class="card-icons"></div>
+                    </div>
+                    <div class="card">
+                        <h3>card5</h3>
+                        <p></p>
+                        <div class="card-icons"></div>
+                    </div>
+                    <div class="card">
+                        <h3>card6</h3>
+                        <p></p>
+                        <div class="card-icons"></div>
+                    </div>
+                </div>
+                <div class="announcements">
+                    <h2>Announcements</h2>
+                    <!-- Box with Announcements -->
+                </div>
+                <div class="trending">
+                    <h2>Trending</h2>
+                    <!-- Box with Trending People -->
+                </div>
+            </div>
         </div>
     </body>
 </html>
