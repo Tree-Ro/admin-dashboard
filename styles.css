@@ -20,6 +20,9 @@ a, button {
     all: unset;
     cursor: pointer;
 }
+ul {
+    list-style: none;
+}
 
 
 .container {
