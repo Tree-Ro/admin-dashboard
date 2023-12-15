@@ -184,6 +184,7 @@ ul {
     text-align: center;
     box-shadow: 3px 3px 5px gray;
     min-width: 65px;
+    user-select: none;
 }
 .navbar .actions button:hover {
     background-color: #78aff1;
